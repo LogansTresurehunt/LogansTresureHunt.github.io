@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Checker</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<h2>Enter Password:</h2>
+<input type="password" id="passwordInput">
+<button onclick="checkPassword()">Submit</button>
+<p id="resultMessage"></p>
+
+<script>
+    function checkPassword() {
+        var password = document.getElementById("passwordInput").value;
+        var resultMessage = document.getElementById("resultMessage");
+
+        // You can customize the password and messages as per your requirement
+        if (password === "secret") {
+            resultMessage.innerText = "Welcome! You have entered the correct password.";
+        } else if (password === "") {
+            resultMessage.innerText = "Please enter a password.";
+        } else {
+            resultMessage.innerText = "Incorrect password. Please try again.";
+        }
+    }
+</script>
+</body>
+</html>
