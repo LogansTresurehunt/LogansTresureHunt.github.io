@@ -16,7 +16,7 @@
 <input type="text" id="passwordInput">
 <button onclick="checkPassword()">Submit</button>
 <p id="resultMessage"></p>
-<p>v.1.1</p>
+<p>v.1.2</p>
 
 <script>
     function checkPassword() {
@@ -28,6 +28,8 @@
             resultMessage.innerText = "hi Logan, you entered the correct password. your next clue is to look in the piano bench.";
         } else if (password === "williamtheconqueror") {
             resultMessage.innerText = "good work, your next clue is in the where the ice cream is";
+        } else if (password === "0") {
+            resultMessage.innerText = "how long did it take you? ok so next go open up the microwave.";
         } else if (password === "") {
             resultMessage.innerText = "Please enter a password.";
         } else {
