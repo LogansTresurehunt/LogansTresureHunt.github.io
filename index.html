@@ -15,11 +15,14 @@
 <h2>Enter Password:</h2>
 <input type="text" id="passwordInput">
 <button onclick="checkPassword()">Submit</button>
-<button onclick="no">hint</button>
+<button onclick="hiny()">hint</button>
 <p id="resultMessage"></p>
-<p>v.1.3</p>
+<p>v.1.4</p>
 
 <script>
+    function hiny() {
+        var resultMessage = "no";
+    }
     function checkPassword() {
         var password = document.getElementById("passwordInput").value;
         var resultMessage = document.getElementById("resultMessage");
