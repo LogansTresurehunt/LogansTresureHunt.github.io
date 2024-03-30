@@ -27,7 +27,7 @@
     function checkPassword() {
         var password = document.getElementById("passwordInput").value;
         var resultMessage = document.getElementById("resultMessage");
-
+        resultMessage.innerText = "";
         // You can customize the password and messages as per your requirement
         if (password === "begin") {
             resultMessage.innerText = "hi Logan, you entered the correct password. your next clue is to look in the piano bench.";
