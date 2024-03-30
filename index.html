@@ -16,6 +16,7 @@
 <input type="password" id="passwordInput">
 <button onclick="checkPassword()">Submit</button>
 <p id="resultMessage"></p>
+<p>v.1.0</p>
 
 <script>
     function checkPassword() {
@@ -23,8 +24,10 @@
         var resultMessage = document.getElementById("resultMessage");
 
         // You can customize the password and messages as per your requirement
-        if (password === "secret") {
-            resultMessage.innerText = "Welcome! You have entered the correct password.";
+        if (password === "begin") {
+            resultMessage.innerText = "hi Logan, you entered the correct password. your next clue is to look in the piano bench.";
+        } else if (password === "williamtheconqueror") {
+            resultMessage.innerText = "good work, your next clue is in the where the ice cream is";
         } else if (password === "") {
             resultMessage.innerText = "Please enter a password.";
         } else {
