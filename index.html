@@ -8,6 +8,10 @@
     body {
         font-family: Arial, sans-serif;
         text-align: center;
+        background-image: url('default_background.jpg'); /* Default background */
+        background-size: cover; /* Cover the entire background */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Do not repeat the background image */
     }
 </style>
 </head>
@@ -15,7 +19,7 @@
 <h2>Logan Enter Password here:</h2>
 <input type="text" id="passwordInput">
 <button onclick="checkPassword()">Submit</button>
-<button onclick="hiny()">hint</button>
+<button onclick="hiny()changeBackground()">Hint</button>
 <p id="resultMessage"></p>
 <img src="hi.jpeg" alt="thumbs_up_man">
 <p>v.1.5</p>
@@ -42,6 +46,10 @@
         } else {
             resultMessage.innerText = "Incorrect password. Please try again.";
         }
+    }
+    function changeBackground() {
+        // Change background image URL
+        document.body.style.backgroundImage = "url('new_background.jpg')";
     }
 </script>
 </body>
